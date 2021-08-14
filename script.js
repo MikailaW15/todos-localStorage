@@ -5,6 +5,12 @@ var todoList = document.getElementById('todo-list')
 
 var todos = []
 
+for (i = 0; i < todos.length; i++ ) {
+var li = document.createElement('li')
+li.innerText = todos[i]
+todoList.appendChild(li)
+}
+
 function addTodo(event) {
 event.preventDefault()
 var newTodoText = newTodoInput.value
