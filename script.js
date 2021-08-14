@@ -1,11 +1,15 @@
-localStorage.setItem('myCar', 'VW');
-localStorage.setItem('myPet', 'EllaBella');
-localStorage.setItem('petAge', 1);
-localStorage.setItem('food', 'Pasta');
-localStorage.setItem('myPet', 'Mia');
+// select DOM customElements
+var newTodoForm = document.getElementById('new-todo-form')
+var newTodoInput = document.getElementById('new-todo')
+var todoList = document.getElementById('todo-list')
 
-var myCar = localStorage.getItem('myCar')
-var myPet = localStorage.getItem('myPet')
-var petAge = localStorage.getItem('petAge')
+var todos = []
 
-localStorage.removeItem('myCar')
+function addTodo(event) {
+event.preventDefault()
+var newTodoText = newTodoInput.value
+todos.push(newTodoText)
+newTodoInput.value = ''
+}
+
+newTodoForm.addEventListener('submit', addTodo)
