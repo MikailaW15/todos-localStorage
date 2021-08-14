@@ -1,3 +1,38 @@
+:root {
+    --light: blue
+}
+
 body {
     background: rgb(177, 177, 177);
+    font-size: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.input {
+    font-size: 38px;
+    padding: 10px;
+}
+input[type="submit"] {
+    color: thistle;
+    background-color: darkslateblue;
+    cursor: pointer;
+    margin-left: 7;
+}
+.container {
+    background: white;
+    max-width: 600px;
+    /* padding: 3rem; */
+    margin: 60px auto;
+    padding: 15px;
+}
+#new-todo-form {
+    display: flex;
+    /* justify-content: center; */
+}
+#new-todo {
+    flex-grow: 1;
+    padding: 15px;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
 }
